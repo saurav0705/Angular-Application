@@ -1,0 +1,14 @@
+@import '~@angular/material/_theming';
+
+@include mat-core();
+//defining the theme 
+$my-theme-primary:mat-palette($mat-purple);
+$my-theme-accent:mat-palette($mat-green);
+$my-theme-warn : mat-palette($mat-indigo);
+
+//packaging the theme
+$test-theme:mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
+
+
+//exporting the theme
+@include angular-material-theme($test-theme);
