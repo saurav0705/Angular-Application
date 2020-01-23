@@ -25,6 +25,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; 
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     ContactComponent,
     TruncatePipe,
-    LoginComponent
+    LoginComponent,
+  
   ],
   imports: [
     MatGridListModule,
@@ -53,7 +57,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatFormFieldModule, 
     MatInputModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatSelectModule
   ],
   providers: [DishServiceService],
   bootstrap: [AppComponent],
